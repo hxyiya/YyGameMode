@@ -1,0 +1,32 @@
+# .gitignore
+# .gitattributes
+
+
+# --- 虚幻引擎临时与生成文件 ---
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# --- 插件特有 ---
+# 如果你的插件里有第三方库的编译输出，也可以加在这里
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# --- 系统与杂项 ---
+.DS_Store
+Thumbs.db
+
+# --- 忽略本地私有配置 ---
+# 允许你在本地存放一些不提交的测试配置
+LocalBuild/
+HostProject/
